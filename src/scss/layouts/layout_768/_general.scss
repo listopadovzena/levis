@@ -1,0 +1,36 @@
+#magnify img {
+  width: 100%;
+}
+
+
+
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+left: 15px;
+}
+
+.leather-box{
+  @include  display (flex);
+  @include flex-direction(row);
+
+}
+.leather-left {
+  margin-top: rem(220px);
+}
+.delivery-left__sign{
+  color: $white;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-left: rem(30px);
+  padding-right: rem(30px);
+}

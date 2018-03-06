@@ -1,0 +1,149 @@
+.top-header {
+  padding-top:rem(28px);
+
+  text-align: center;
+
+}
+
+.logo-box {
+  display: inline-block;
+  min-height: 47px;
+
+  padding-left: 60px;
+  background-size:contain;
+
+  @include e(title) {
+    font-size: rem(20px);
+    text-transform: uppercase;
+  }
+  @include e(slogan) {
+    text-transform: capitalize;
+    }
+}
+
+.is-mobile .nav-menu {
+  display: none;
+}
+
+.nav {
+
+   margin: 1rem 0;
+    @include e(item) {
+      display: block;
+      padding: rem(12px) 0;
+      text-decoration: none;
+      font-size: rem(20px);
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #2d3e50;
+max-width: rem(300px);
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+}
+.top-box{
+
+  background: url(#{$imgPath}boot-brbrown.jpg) no-repeat;
+  width: 100%;
+
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+
+.contact__title {
+  text-align: center;
+  font-size: rem(20px);
+  color: $red;
+  font-weight: 700;
+  font-family: $fontFamily;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.contact {
+  background:$white;
+  padding:1em 2em;
+  position:relative;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  min-width: 600px;
+  right: 500px;
+}
+.js .contact{
+  position:absolute;
+  top:0;
+  width:inherit;
+  display:none;
+}
+.close{
+  position:absolute;
+  right:20px;
+  top:0;
+  font-size: 2rem;
+  cursor:pointer;
+  color: red;
+  text-transform: uppercase;
+}
+label{
+  display:block;
+}
+.input{
+  width:100%;
+  line-height:2em;
+  border: 1px solid #e8e8e8;
+  background: #e8e8e8;
+  border-radius: rem(25px);
+  padding: 10px ;
+  padding-right: rem(60px);
+  margin-bottom: rem(15px);
+
+}
+input[type='submit'],
+.button-form {
+  border: 1px solid red;
+  margin-left: 49%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  padding: 15px 28px;
+  border-radius: 25px;
+  background: $red;
+  color: $white;
+  font-weight: 800;
+  margin-bottom: rem(50px);
+  font-size: rem(15px);
+
+}
+.ul{
+  list-style: none;
+  border: 1px solid white;
+  background: white;
+}
+.size{
+  border: 1px solid #e8e8e8;
+  background: #e8e8e8;
+  padding: 10px ;
+  padding-right: rem(60px);
+  margin-bottom: rem(15px);
+  border-radius: rem(25px);
+}
+.sizee{
+  @include  display(flex);
+
+}
+.form{
+  @include display (flex);
+}
+
+.input-table{
+  font-size: rem(15px);
+  font-weight: 800;
+  font-family: $fontFamily;
+  text-transform: uppercase;
+}
+

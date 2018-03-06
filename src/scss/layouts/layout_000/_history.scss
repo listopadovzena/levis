@@ -1,0 +1,82 @@
+
+.history-left{
+  @include display (flex);
+  @include flex-direction (column);
+
+  margin-top: rem(60px);
+  @include e(title){
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-family: $fontFamily;
+    color:$red;
+    margin-bottom: rem(25px);
+  }
+  @include e(brand){
+    font-family: $fontFamily;
+    font-weight: 800;
+    color: $red;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: rem(50px);
+    margin-bottom: rem(50px);
+  }
+  @include e(cooperate){
+    font-size: rem(15px);
+    color: $black;
+    font-family: $fontFamily;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: rem(30px);
+
+  }
+  @include e(quote){
+    font-size: rem(15px);
+    font-family: $fontFamily;
+    color: $black;
+    line-height: 1.5;
+    margin-bottom: rem(35px);
+  }
+  @include e(choice){
+    font-size: rem(16px);
+    font-weight: 700;
+    font-family: $fontFamily;
+    color: $black;
+
+  }
+  @include e(celebrity){
+    font-size: rem(15px);
+
+    font-family: $fontFamily;
+    color: $black;
+    line-height: 1.5;
+
+  }
+}
+
+
+.history-right{
+  @include display (flex);
+  @include flex (1);
+  margin-top:rem(95px)
+}
+.history-box{
+  @include display (flex);
+  justify-content: space-between;
+  margin-bottom: rem(135px);
+}
+.history-left__brand::after {
+  content: '';
+  width: 145px;
+  height: 2px;
+  background: $gray;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}
+
+.img-history{
+ display: none;
+ }
+

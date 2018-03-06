@@ -1,0 +1,157 @@
+.top-header {
+   text-align: left;
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+.logo-box {
+  margin-bottom: 2rem;
+}
+.nav {
+  margin: 0;
+  @include display(flex);
+
+  @include e(item) {
+    display: inline;
+    padding: rem(12px) ;
+    background: none;
+    color: $color;
+    border-bottom: 0;
+    font-size: 14px;
+
+  }
+}
+.order{
+display: block;
+  position: absolute;
+  top: 165px;
+  right:100px;
+  border: 1px solid white;
+  background: $white;
+  max-width: rem(500px);
+  padding-left: rem(25px);
+  padding-right: 25px;
+}
+.order-name{
+  text-align: left;
+  padding-top: rem(70px);
+  font-size: rem(36px);
+  font-family: $fontFamily;
+  color: $red;
+  font-weight: 800;
+  padding-bottom: rem(35px);
+}
+.order-title{
+  font-size: rem(10px);
+  font-family: $fontFamily;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: rem(34px);
+  margin-bottom: rem(40px);
+  position: relative;
+  color:$black;
+
+}
+
+
+.order-title::after {
+  content: '';
+  width: 145px;
+  height: 2px;
+  background: $gray;
+  position: absolute;
+  left: 17%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.order-content{
+  padding-bottom: rem(45px);
+  font-family: $fontFamily;
+  color: $black;
+  font-size: rem(16px);
+  text-align: left;
+}
+
+
+
+.footer-box{
+  @include display (flex);
+  @include flex-direction(row);
+}
+
+.slider{
+  @include display (flex);
+  @include flex-direction (column);
+  border: 1px solid $white;
+  background: $white;
+  min-width: 400px;
+  text-align: center;
+
+
+  margin: 140px auto;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.18);
+}
+
+.leather-left__name::after {
+  content: '';
+  width: 145px;
+  height: 2px;
+  background: $grayLine;
+  position: absolute;
+  left:0;
+  bottom: 0;
+
+}
+
+.img-history{
+  display: block;
+  min-width: 100%;
+ min-height: 100%;
+}
+
+
+
+.history-left{
+  @include display (flex);
+  @include flex-direction (column);
+
+  @include flex (1);
+  margin-top: rem(150px);}
+.delivery-right__img{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+.leather-left__soleName::after {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: $grayLine;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}
+.top-model {
+  text-align: center;
+  margin-top: rem(125px);
+}
+.leather-box__right{
+  margin-top: rem(270px);}
+.gallery-title__title {
+  margin-top: rem(300px);
+}
+.footer-left__title{
+
+  padding-right: rem(315px);
+}
+.footer-left__title2{
+ display: block;
+  font-size: rem(28px);
+  font-family:$fontFamily;
+  padding-bottom:rem(75px) ;
+}
+.top-model__size{
+
+    margin-bottom: rem(180px);
+}

@@ -1,0 +1,174 @@
+.leather{
+  @include  display (flex);
+  justify-content: space-between;
+
+}
+
+.leather-box{
+  @include  display (flex);
+ @include flex-direction(column)
+
+}
+.leather-left{
+  @include display (flex);
+  @include flex (1);
+  @include flex-direction (column);
+}
+
+.leather-left{
+  margin-top: rem(1px);
+  font-family: $fontFamily;
+
+  @include e(title){
+    font-size: rem(27px);
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+    color: $black;
+  }
+  @include e(name) {
+    font-size: rem(27px);
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+    font-weight: 800;
+    color:$red ;
+    position: relative;
+    padding-bottom: rem(35px);
+  }
+  @include e(price){
+    font-size: 35px;
+    color: $red;
+    padding-right: rem(10px);
+
+  }
+  @include e(season){
+    font-size: rem(12px);
+    color: $black;
+  }
+  @include e(material){
+    font-size: rem(12px);
+    color: $black;
+  }
+  @include e(materialName){
+    font-size: rem(12px);
+    color: $supGray;
+  }
+  @include e(within){
+    font-size: rem(12px);
+    color: $black;
+  }
+  @include e(withinName){
+    font-size: rem(12px);
+    color: $supGray;
+  }
+  @include e(sole){
+    font-size: rem(12px);
+    color: $black;
+  }
+  @include e(soleName){
+    font-size: rem(12px);
+    color: $supGray;
+    position: relative;
+    padding-bottom: rem(38px);
+    margin-bottom: rem(65px);
+
+
+  }
+}
+
+.leather-left__soleName::after {
+  content: '';
+  width: 120px;
+  height: 2px;
+  background: $grayLine;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}
+
+.leather-box__right{
+  margin-top: rem(60px);
+  @include display (flex);
+  @include flex-direction (column);
+  min-width: 65%;
+
+
+
+}
+
+
+.leather-left__name::after {
+  content: '';
+  width: 125px;
+  height: 2px;
+  background: $grayLine;
+  position: absolute;
+  left:0;
+  bottom: 0;
+
+}
+.price{
+  @include display (flex);
+
+
+
+}
+.currency{
+  font-size: rem(14px);
+  color: $black;
+  padding-right: rem(25px);
+
+  margin-top:rem(15px) ;
+}
+.price-currency{
+  margin-top:rem(15px) ;
+  color: #e7e7e7;
+  font-size: rem(14px);
+}
+.leather-left__table{
+  @include  display (flex);
+
+}
+.table-size{
+  font-size: 14px;
+  color: $black;
+ margin-top: 15px;
+
+
+
+
+}
+
+
+.input-table{
+  border:1px solid $red ;
+  padding:18px 40px;
+  background: $red;
+  color:$white;
+  border-radius: 25px;
+}
+.leather-foto{
+  text-align: center;
+
+
+}
+.leather-img{
+  margin-bottom: rem(80px);
+  max-width: 80%;
+}
+.leather-foto__item{
+vertical-align: top;
+  border: 1px solid $gray;
+  margin-left: rem(20px);
+  padding-bottom: rem(33px);
+  padding-top: rem(15px);
+}
+
+
+
+.cnt {
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,96 @@
+.reviews{
+  background: $lightGray;
+  text-align: center;
+
+}
+
+
+.top-reviews{
+  font-family: $fontFamily;
+  @include e(title){
+    color:$red;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: rem(35px);
+    margin-top: rem(110px);
+    position: relative;
+    padding-bottom: rem(40px);
+
+    margin-bottom: rem(40px);
+  }
+  @include e(content){
+    text-transform: uppercase;
+    color: $strongGray;
+    margin-bottom: rem(125px);
+    font-size: rem(15px);
+  }
+}
+
+.top-reviews__title::after {
+  content: '';
+  width: 145px;
+  height: 2px;
+  background: $grayLine;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.slider{
+  @include display (flex);
+  @include flex-direction (column);
+  border: 1px solid $white;
+  background: $white;
+max-width: 200px;
+  text-align: center;
+
+
+  margin: 140px auto;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.18);
+}
+
+
+
+.mydots {
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+}
+.mydots li {
+  display: inline-block;
+  text-indent: -9999px;
+width: rem(7px);
+  height: rem(7px);
+  margin-right: 6px;
+  border-radius: 14px;
+  border: 1px solid #b8b8b8;
+  background: white;
+}
+.mydots li.slick-active {
+  background:#b8b8b8;
+  width: rem(11px);
+  height: rem(11px);
+
+}
+.item-img{
+  margin:45px auto;
+}
+
+.item-content{
+
+  text-align: center;
+  font-family: $fontFamily;
+  color: $black;
+}
+.item-name{
+  margin-top: rem(45px);
+  font-size: rem(15px);
+  font-weight: 700;
+  font-family: $fontFamily;
+  text-transform: uppercase;
+  color: $black;
+}
+

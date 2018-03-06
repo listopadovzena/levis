@@ -1,0 +1,56 @@
+.footer-box{
+  @include display (flex);
+  @include flex-direction(column);
+}
+.footer{
+  background: $black;
+  @include display (flex);
+  @include flex-direction(column);
+}
+.footer-left__title{
+  padding-top: rem(70px);
+  color:$white;
+  font-size: rem(28px);
+  font-family: $fontFamily;
+
+}
+.footer-left__title2{
+display: block;
+
+  color:$white;
+  font-size: rem(28px);
+  font-family:$fontFamily;
+  padding-bottom:rem(75px) ;
+}
+.footer-left{
+  @include flex-direction (column);
+}
+.footer-left__img{
+margin-bottom: rem(20px);
+  @include display (flex);
+}
+
+.footer-right__input{
+background: $red;
+  border: 1px solid #c41230;
+  padding:  20px 75px;
+  border-radius: 25px;
+  color: $white;
+  font-size: rem(15px);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: rem(100px);
+
+}
+.footer-right{
+ @include display (flex);
+  @include flex-direction (column);
+  padding-top: rem(85px);
+}
+.footer-right__content{
+  font-size: rem(12px);
+  color: $white;
+  font-family: $fontFamily;
+}
+
+
